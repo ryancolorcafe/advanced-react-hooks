@@ -55,11 +55,6 @@ function useAsync(asyncCallback, initialState) {
 }
 
 function PokemonInfo({pokemonName}) {
-  // const greet = React.useCallback(
-  //   greeting => console.log(`${greeting} ${props.name}`),
-  //   [props.name],
-  // )
-
   const asyncCallback = React.useCallback(() => {
     if (!pokemonName) {
       return
